@@ -8,7 +8,7 @@ body {
   grid-template-columns: 2fr 1fr;
   margin: 0 auto;
   margin-top: 3rem;
-  width: 50%;
+  width: 80%;
   /* border: 3px solid rgba(255,255,255,0.7); */
   background: linear-gradient(145deg, #15a76c, #19c680);
 box-shadow:  20px 20px 60px #12905e, 
@@ -53,28 +53,31 @@ box-shadow:  20px 20px 60px #12905e,
 .bg-triangle {
   z-index: -1;
   position: absolute;
-  top: 28rem;
-  left: 18rem;
-  display: block;
+  top: 50%;
+  left: 37%;
   margin: 0 auto;
 }
 .option {
-  display:inline-block;
+  display:block;
   align-items: center;
   justify-content: center;;
   position: absolute;
   z-index: 2;
-  
   left: 0;
-
   color: #0ba266;
   font-size: 3.25rem;
-  line-height: 50%;
-  transition: all 10s linear;
+  transition: all 0.3s ease;
+  height: 100px;
+  width: 100px;
+  line-height: 120px;
+  border-radius: 50%;
+  background: #17b978;
+  box-shadow:  17px 17px 34px #12905e, 
+             -17px -17px 34px #1ce292;
 }
 
-.option :hover {
-  transform: rotate(45deg);
+.option:hover {
+  transform: scale(1.5) rotate(45deg);
 }
 
 .icon {
@@ -83,9 +86,26 @@ box-shadow:  20px 20px 60px #12905e,
   text-align: center;
   height: 90px;
   width: 90px;
-  border: 1px solid green;
-  border-radius: 50%;
-  background: #17b978;
-  box-shadow:  17px 17px 33px #12905e, 
-  -17px -17px 33px #1ce292;
+}
+
+.rock {
+    position: absolute;
+    top: 47%;
+    left: 33%;
+}
+
+.paper {
+  position: absolute;
+  top: 47%;
+  left: 60%;
+}
+
+.scissors {
+  position: absolute;
+  top: 66%;
+  left: 47%;
+}
+
+@media (min-width: 300px ){
+
 }
